@@ -41,7 +41,7 @@ export const config = {
     poetry: false,
 
     /** 星座运势 */
-    horoscope: false,
+    horoscope: ture,
 
     /** 生日消息和节日消息 */
     birthdayMessage: true,
@@ -60,23 +60,23 @@ export const config = {
   USERS: [
     {
       // 想要发送的人的名字
-      name: "老婆0",
+      name: "陈硕涵",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "",
+      id: "早上好啊",
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "",
       // 所在省份
-      province: "广东",
+      province: "保定",
       // 所在城市
-      city: "肇庆",
+      city: "河北大学",
       // 新历生日, 仅用作获取星座运势, 格式必须
-      horoscopeDate: '12-27',
+      horoscopeDate: '1-7',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-      openUrl: "https://wangxinleo.cn",
+      openUrl: "https://www.xuexi.cn/",
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
-      festivals: [
+      festivals: [“*生日”，“name”：“陈硕涵”，“year”：“2002”，“date”：“01-07”
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09"},
         {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
@@ -94,46 +94,7 @@ export const config = {
         {"keyword": "ex_day", date: "2022-09-10"},
       ]
     },
-    {
-      name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-    {
-      name: "老婆2",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-    {
-      name: "老婆3",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-    // 你可以不断按格式往下增加
-    // ...
-  ],
-
+   
   /**
    * 【推送完成提醒】 相关，主要用来展示发送是否成功/失败的数据
    */
@@ -142,12 +103,12 @@ export const config = {
   CALLBACK_TEMPLATE_ID: "",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-  CALLBACK_USERS: [
+  CALLBACK_USERS: [llw1569162996
     {
       // 一般都填自己
-      name: "自己",
+      name: "王凯",
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "",
+      id: "owyBz6B8Wq6q1 7y2JzK-GXjy4V86",
     },
     // 你可以不断按格式往下增加
     // ...
@@ -160,9 +121,9 @@ export const config = {
   /** 天气相关 */
 
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "广东",
+  PROVINCE: "河北",
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: "惠州",
+  CITY: "张家口",
 
   /** 重要节日相关 */
 
@@ -224,7 +185,7 @@ export const config = {
     * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
     * 比如：keyword: "lover_prattle" ，在测试号中就是 {{ lover_prattle.DATA }}
     * */
-  SLOT_LIST: [
+  SLOT_LIST: [卷起来吧！小涵
     // 这样配置的话，就会每次发送这句话
     {"keyword": "encourage_oneself", contents: "你主要的问题在于读书太少而想得太多"},
     // 这样配置的话，就会每次随机选一句话发送
